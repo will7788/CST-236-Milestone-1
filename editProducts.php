@@ -15,7 +15,7 @@ if ($conn->connect_error) {
 }
 echo "Connected successfully";
 
-echo '<h1 style="text-align: center;">Products</h1>';
+echo '<h1 style="text-align: center;"> Edit Products</h1>';
 
 echo '<head>
 <meta charset="utf-8">
@@ -33,17 +33,18 @@ echo '<table class="table">
 <tbody>';
 for ($j = 0; $j < 4; $j++) {
     echo '<tr>';
-for ($i = 0; $i < 3; $i++) {
-    echo '<td><div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+    for ($i = 0; $i < 3; $i++) {
+        echo '<td><div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
   <div class="card-header">Header</div>
   <div class="card-body">
     <h5 class="card-title">Secondary card title</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the cards content.</p>
-    <button type="button" class="btn btn-dark">Add To Cart</button>
+    <button type="button" class="btn btn-dark">Edit</button>
+    <button type="button" class="btn btn-dark">Remove</button>
   </div>
 </div></td>';
-}
-echo '</tr>';
+    }
+    echo '</tr>';
 }
 echo '</tbody>
 </table>
