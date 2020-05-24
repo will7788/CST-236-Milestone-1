@@ -46,6 +46,11 @@ echo '</tbody>
 </table>
 </body>';
 
+echo '<form action="checkout.php">
+<input type="submit" class="btn btn-dark" value="Checkout" />
+</form>';
+
+
 ?>
 
 
