@@ -16,14 +16,14 @@ if ($conn->connect_error) {
 }
 
 
-$sql = "INSERT INTO order_history VALUES ('".$_POST["name"]."')";
+// $sql = "INSERT INTO order_history VALUES ('".$_POST["name"]."')";
 
-if (mysqli_query($conn, $sql)) {
-    echo "New record created successfully";
-} else {
-    echo "Error: " . $sql . "" . mysqli_error($conn);
-}
-$conn->close();
+// if (mysqli_query($conn, $sql)) {
+//     echo "New record created successfully";
+// } else {
+//     echo "Error: " . $sql . "" . mysqli_error($conn);
+// }
+// $conn->close();
 
 echo "Your items have been purchased!";
 

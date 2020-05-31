@@ -1,7 +1,7 @@
 <?php
-include 'header.php';
-include 'autoLoader.php';
+// include 'header.php';
+// include 'autoLoader.php';
 
-echo "Unsuccessful Login!";
+echo "User Not Found!";
 
 ?>
